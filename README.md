@@ -21,8 +21,8 @@ Character manager for tabletop games, with the potential for expansion into trac
 >- Must use CI/CD pipelines and be deployed to Azure
 >
 >## How to obtain the full 50 points for the assignment
->- Meet all of the above requirments
->- The application should do something midly interesting, (e.g. it should probably do something more than just displaying a weather report)
+>- Meet all of the above requirements
+>- The application should do something mildly interesting, (e.g. it should probably do something more than just displaying a weather report)
 >
 >## How to obtain the 50 points of extra credit
 >- These points are given out at the instructors discretion
