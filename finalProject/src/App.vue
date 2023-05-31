@@ -1,17 +1,7 @@
 <template>
   <v-app>
     <span class="bg"></span>
-    <v-app-bar :elevation="3">
-      <template v-slot>
-        <v-app-bar-title>
-          <RouterLink to="/">
-            <v-icon icon="mdi-leaf" color="primary"></v-icon>
-            Wordle
-          </RouterLink>
-        </v-app-bar-title>
-        <v-spacer></v-spacer>
-        <v-btn icon="mdi-trophy-outline"></v-btn>
-      </template>
+    <v-app-bar color="#4b281b" fixed dense>
     </v-app-bar>
 
     <v-main>
