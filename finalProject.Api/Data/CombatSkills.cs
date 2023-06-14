@@ -16,9 +16,9 @@
         public Trait Craoiseach { get; set; } = new("Craoiseach");
         public Trait Sling { get; set; } = new("Sling");
 
-        public Trait WriteIn1 { get; set; } = null!;
-        public Trait WriteIn2 { get; set; } = null!;
-        public Trait WriteIn3 { get; set; } = null!;
-        public Trait WriteIn4 { get; set; } = null!;
+        public Trait WriteIn1 { get; set; } = new(". . . . .");
+        public Trait WriteIn2 { get; set; } = new(". . . . .");
+        public Trait WriteIn3 { get; set; } = new(". . . . .");
+        public Trait WriteIn4 { get; set; } = new(". . . . .");
     }
 }

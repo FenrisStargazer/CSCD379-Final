@@ -2,7 +2,7 @@
 {
     public class PDCharacter
     {
-        public Guid PlayerId { get; set; }
+        public string PlayerUN { get; set; } = null!;
         public Guid CharacterId { get; set; }
         public CharacterData CharData;
         public Score GloryInfo { get; set; }

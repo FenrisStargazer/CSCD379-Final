@@ -11,15 +11,15 @@
         public Trait GeoLore { get; set; } = new("Geomantic Lore");
         public Trait Sight { get; set; } = new("Sight");
 
-        public Trait Talent1 { get; set; } = null!;
-        public Trait Talent2 { get; set; } = null!;
-        public Trait Talent3 { get; set; } = null!;
-        public Trait Talent4 { get; set; } = null!;
-        public Trait Talent5 { get; set; } = null!;
-        public Trait Talent6 { get; set; } = null!;
-        public Trait Talent7 { get; set; } = null!;
-        public Trait Talent8 { get; set; } = null!;
-        public Trait Talent9 { get; set; } = null!;
-        public Trait Talent10 { get; set; } = null!;
+        public Trait Talent1 { get; set; } = new(". . . . .");
+        public Trait Talent2 { get; set; } = new(". . . . .");
+        public Trait Talent3 { get; set; } = new(". . . . .");
+        public Trait Talent4 { get; set; } = new(". . . . .");
+        public Trait Talent5 { get; set; } = new(". . . . .");
+        public Trait Talent6 { get; set; } = new(". . . . .");
+        public Trait Talent7 { get; set; } = new(". . . . .");
+        public Trait Talent8 { get; set; } = new(". . . . .");
+        public Trait Talent9 { get; set; } = new(". . . . .");
+        public Trait Talent10 { get; set; } = new(". . . . .");
     }
 }

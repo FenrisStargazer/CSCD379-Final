@@ -48,8 +48,8 @@ namespace finalProject.Api.Data
         public bool ChivBonus { get; set; }
 
 
-        public Trait DirectedOne { get; set; } = null!;
-        public Trait DirectedTwo { get; set; } = null!;
-        public Trait DirectedThree { get; set; } = null!;
+        public Trait DirectedOne { get; set; } = new(". . . . .");
+        public Trait DirectedTwo { get; set; } = new(". . . . .");
+        public Trait DirectedThree { get; set; } = new(". . . . .");
     }
 }

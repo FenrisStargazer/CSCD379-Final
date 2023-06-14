@@ -2,8 +2,8 @@
 {
     public class Horse
     {
-        public string Type { get; set; } = null!;
-        public string Name { get; set; } = null!;
+        public string Type { get; set; } = "Null";
+        public string Name { get; set; } = "Null";
         public bool CombatTrained { get; set; }
         
         public int SIZ { get; set; }

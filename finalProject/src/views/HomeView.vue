@@ -1,24 +1,27 @@
 <template>
-<!-- <div class="d-flex flex-column fill-height justify-center align-center text-white"></div> -->
-  <v-card class="charCard">
-    <v-expansion-panels variant="accordion">
-      <v-expansion-panel>
-        <v-expansion-panel-title>Item</v-expansion-panel-title>
-        <v-expansion-panel-text>Lorem ipsum.</v-expansion-panel-text>
-      </v-expansion-panel>
-      <v-expansion-panel>
-        <v-expansion-panel-title>Item</v-expansion-panel-title>
-        <v-expansion-panel-text>Lorem ipsum.</v-expansion-panel-text>
-      </v-expansion-panel>
-    </v-expansion-panels>
-  </v-card>
+  <div class="d-flex flex-column fill-height justify-center align-center">
+    <CharacterCard v-for="char in list" :key="char.characterId" :main="char"></CharacterCard>
+  </div>
 </template>
-<style>
-.charCard {
-  margin: 5px;
-  padding: 5px !important;
-  background-color: rgba(242, 211, 169) !important;
-  border: 1px solid #4b281b !important;
-  filter: drop-shadow(5px 8px 3px #3b3b3b);
+<script lang="ts" setup>
+import type { PDCharacter } from '@/scripts/PDCharacter'
+import Axios from 'axios'
+import { reactive } from 'vue'
+import CharacterCard from '@/components/CharacterCard.vue'
+
+const list = reactive(new Array<PDCharacter>())
+populateList()
+
+function populateList() {
+  Axios.get('Character/GetCharacters')
+    .then((response) => {
+      list.length = 0
+      response.data.list.forEach((item: PDCharacter) => {
+        list.push(item)
+      })
+    })
+    .catch((error) => {
+      console.log(error)
+    })
 }
-</style>
+</script>

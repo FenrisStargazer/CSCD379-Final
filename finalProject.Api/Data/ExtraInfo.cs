@@ -4,11 +4,11 @@
     {
         //FAMILY
         public int YearWed { get; set; }
-        public string SpouseName { get; set; } = null!;
-        public string Status { get; set; } = null!;
-        public string Will { get; set; } = null!;
-        public string Children { get; set; } = null!;
-        public string FamilyCharacteristic { get; set; } = null!;
+        public string SpouseName { get; set; } = "Null";
+        public string Status { get; set; } = "Null";
+        public string Will { get; set; } = "Null";
+        public string Children { get; set; } = "Null";
+        public string FamilyCharacteristic { get; set; } = "Null";
 
         //ANNUAL GLORY
         public int TraitGlory { get; set; }
@@ -19,7 +19,7 @@
         public int TOTALglory { get; set; }
 
         //HISTORY
-        public string History { get; set; } = null!;
+        public string History { get; set; } = "Null";
 
         //SPECIAL EVENTS
         public int YearBorn { get; set; }
@@ -31,13 +31,13 @@
         public int YearDeath { get; set; }
 
         //HOLDINGS
-        public string Holdings { get; set; } = null!;
+        public string Holdings { get; set; } = "Null";
         public int LandGlory { get; set; }
 
         //EQUIPMENT AT HOME
         public int Libra { get; set; }
         public int Denarii { get; set; }
-        public string HomeEquipment { get; set; } = null!;
+        public string HomeEquipment { get; set; } = "Null";
 
         //ARMY
         public int OldKnights { get; set; }

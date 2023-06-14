@@ -6,7 +6,7 @@
         public int Value { get; set; }
         public bool Check { get; set; }
         public bool IsRel { get; set; }
-        public string notes { get; set; } = null!;
+        public string Notes { get; set; } = ". . . . .";
 
         public Trait(string T1)
         {

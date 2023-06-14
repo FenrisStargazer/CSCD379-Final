@@ -29,9 +29,9 @@
         public Trait Swimming { get; set; } = new("Swimming");
         public Trait Tourney { get; set; } = new("Tourney");
 
-        public Trait WriteIn1 { get; set; } = null!;
-        public Trait WriteIn2 { get; set; } = null!;
-        public Trait WriteIn3 { get; set; } = null!;
-        public Trait WriteIn4 { get; set; } = null!;
+        public Trait WriteIn1 { get; set; } = new(". . . . .");
+        public Trait WriteIn2 { get; set; } = new(". . . . .");
+        public Trait WriteIn3 { get; set; } = new(". . . . .");
+        public Trait WriteIn4 { get; set; } = new(". . . . .");
     }
 }

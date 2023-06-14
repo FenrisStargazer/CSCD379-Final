@@ -15,10 +15,10 @@
         public int Unconscious { get; set; }
 
         public int CurrentHitPoints { get; set; }
-        public string Wounds { get; set; } = null!;
+        public string Wounds { get; set; } = ". . . . .";
         public bool Chirurgery { get; set; }
 
-        public string DistinctiveFeatures { get; set; } = null!;
+        public string DistinctiveFeatures { get; set; } = ". . . . .";
         public string WomansGift { get; set; } = null!;
     }
 }
