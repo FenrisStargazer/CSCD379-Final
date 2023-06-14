@@ -13,6 +13,7 @@ const list = reactive(new Array<PDCharacter>())
 populateList()
 
 function populateList() {
+  console.log("running")
   Axios.get('Character/GetCharacters')
     .then((response) => {
       list.length = 0
@@ -23,5 +24,7 @@ function populateList() {
     .catch((error) => {
       console.log(error)
     })
+    console.log("completed")
+    console.log(list)
 }
 </script>
