@@ -16,25 +16,34 @@
       <v-card class="pa-6 ma-2" variant="outlined">
         <v-row><h2>Personality Traits:</h2></v-row>
         <v-row>
-            <v-icon v-if="chaste" size="small">mdi-check-circle-outline</v-icon>
-            <v-icon v-if="!chaste" size="small">mdi-circle-outline</v-icon>
-            <p><b>Chaste</b> . . . . . {{ main?.traits.chaste.value }} / {{ main?.traits.lustful.value }} . . . . . <b>Lustful</b></p>
-            <v-icon v-if="lustful" size="small">mdi-check-circle-outline</v-icon>
-            <v-icon v-if="!lustful" size="small">mdi-circle-outline</v-icon>
+          <v-icon v-if="chaste" size="small">mdi-check-circle-outline</v-icon>
+          <v-icon v-if="!chaste" size="small">mdi-circle-outline</v-icon>
+          <p>
+            <b>Chaste</b> . . . . . {{ main?.traits.chaste.value }} /
+            {{ main?.traits.lustful.value }} . . . . . <b>Lustful</b>
+          </p>
+          <v-icon v-if="lustful" size="small">mdi-check-circle-outline</v-icon>
+          <v-icon v-if="!lustful" size="small">mdi-circle-outline</v-icon>
         </v-row>
         <v-row>
-            <v-icon v-if="energetic" size="small">mdi-check-circle-outline</v-icon>
-            <v-icon v-if="!energetic" size="small">mdi-circle-outline</v-icon>
-            <p><b>Energetic</b> . . . . . {{ main?.traits.energetic.value }} / {{ main?.traits.lazy.value }} . . . . . <b>Lazy</b></p>
-            <v-icon v-if="lazy" size="small">mdi-check-circle-outline</v-icon>
-            <v-icon v-if="!lazy" size="small">mdi-circle-outline</v-icon>
+          <v-icon v-if="energetic" size="small">mdi-check-circle-outline</v-icon>
+          <v-icon v-if="!energetic" size="small">mdi-circle-outline</v-icon>
+          <p>
+            <b>Energetic</b> . . . . . {{ main?.traits.energetic.value }} /
+            {{ main?.traits.lazy.value }} . . . . . <b>Lazy</b>
+          </p>
+          <v-icon v-if="lazy" size="small">mdi-check-circle-outline</v-icon>
+          <v-icon v-if="!lazy" size="small">mdi-circle-outline</v-icon>
         </v-row>
         <v-row>
-            <v-icon v-if="forgiving" size="small">mdi-check-circle-outline</v-icon>
-            <v-icon v-if="!forgiving" size="small">mdi-circle-outline</v-icon>
-            <p><b>Forgiving</b> . . . . . {{ main?.traits.forgiving.value }} / {{ main?.traits.vengeful.value }} . . . . . <b>Vengeful</b></p>
-            <v-icon v-if="vengeful" size="small">mdi-check-circle-outline</v-icon>
-            <v-icon v-if="!vengeful" size="small">mdi-circle-outline</v-icon>
+          <v-icon v-if="forgiving" size="small">mdi-check-circle-outline</v-icon>
+          <v-icon v-if="!forgiving" size="small">mdi-circle-outline</v-icon>
+          <p>
+            <b>Forgiving</b> . . . . . {{ main?.traits.forgiving.value }} /
+            {{ main?.traits.vengeful.value }} . . . . . <b>Vengeful</b>
+          </p>
+          <v-icon v-if="vengeful" size="small">mdi-check-circle-outline</v-icon>
+          <v-icon v-if="!vengeful" size="small">mdi-circle-outline</v-icon>
         </v-row>
       </v-card>
     </v-col>
@@ -43,9 +52,8 @@
 <script lang="ts" setup>
 import { PDCharacter } from '@/scripts/PDCharacter'
 
-
 const props = defineProps({
-    main: PDCharacter
+  main: PDCharacter
 })
 
 let chaste = props.main?.traits.chaste.check
